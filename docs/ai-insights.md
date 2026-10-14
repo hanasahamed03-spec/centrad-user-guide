@@ -12,3 +12,4 @@ Ask questions about your data.
 ## See also
 - [Reports](reports.md)
 - [Dashboard](dashboard.md)
+- [Cenhub Assistant](cenhub-assistant.md)
