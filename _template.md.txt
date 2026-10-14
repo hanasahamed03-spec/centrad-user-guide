@@ -1,0 +1,19 @@
+# Task title (what the user wants to do)
+
+One or two sentences on what this is for and who uses it.
+
+## Before you start
+- Permission or setting needed.
+
+## Steps
+1. First action.
+2. Second action.
+3. Result.
+
+<!-- screenshot: describe the screen to capture, save as assets/img/name.png -->
+
+!!! note
+    Rules, limits or tips.
+
+## Related topics
+- [Another topic](other-topic.md)
