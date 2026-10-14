@@ -1,0 +1,92 @@
+site_name: Centrad User Guide
+site_description: User guide for the Centrad fleet management and telematics portal
+# site_url: https://help.example.com/user-guide/   <- set this when the final address is known
+docs_dir: docs
+extra:
+  generator: false
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font: false
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle: { icon: material/weather-night, name: Switch to dark mode }
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle: { icon: material/weather-sunny, name: Switch to light mode }
+  features:
+    - navigation.path
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      zoomable: true
+      draggable: false
+      auto_caption: false
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/theme2.css
+extra_javascript:
+  - javascripts/panels.js
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: false
+nav:
+  - Introduction: index.md
+  - Requirements: requirements.md
+  - Glossary: glossary.md
+  - Quick start:
+      - Overview: quick-start/index.md
+      - Sign in and find your way around: quick-start/sign-in-and-interface.md
+      - Find a vehicle on the map: quick-start/find-a-vehicle.md
+      - Watch live video: quick-start/watch-live-video.md
+      - Request a video clip: quick-start/request-a-video-clip.md
+      - Add evidence: quick-start/add-evidence.md
+  - Dashboard: dashboard.md
+  - Monitoring:
+      - Live Tracking: monitoring/live-tracking.md
+      - Trips: monitoring/trips.md
+  - Video Management:
+      - Event Center: video-management/event-center.md
+      - Live Video: video-management/live-video.md
+      - Video Playback: video-management/video-playback.md
+      - Video Downloads: video-management/video-downloads.md
+  - Evidence Locker: evidence-locker.md
+  - Geofence: geofence.md
+  - CEN Check:
+      - Template: cen-check/templates.md
+      - Completed Templates: cen-check/completed-templates.md
+  - Notifications: notifications.md
+  - Reports: reports.md
+  - Configurations:
+      - User Masters: configurations/user-masters.md
+      - Asset Management: configurations/asset-management.md
+      - System Settings: configurations/system-settings.md
+      - Manage Vehicles: configurations/manage-vehicles.md
+  - Audit Log:
+      - User Logs: audit-log/user-logs.md
+  - AI Insights: ai-insights.md

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    /* apply the remembered panel state before first paint (avoids a flash) */
+    try {
+      var s = JSON.parse(localStorage.getItem("cen-panels") || "{}");
+      if (s.left)  document.documentElement.classList.add("cen-left-collapsed");
+      if (s.right) document.documentElement.classList.add("cen-right-collapsed");
+    } catch (e) {}
+  </script>
+{% endblock %}
