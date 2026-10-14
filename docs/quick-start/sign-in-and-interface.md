@@ -17,7 +17,7 @@ Need an account? Click **Request access**. The sign-in page also has **Forgot pa
 
 - **Menu (left):** Dashboard, Monitoring, Video Management, Evidence Locker, Geofence, CEN Check, Notifications, Reports, Configurations, Audit Log and AI Insights. A small arrow means the item opens to show more pages.
 - **Top right:** the notification bell and your user name.
-- **Bottom right:** a round chat button.
+- **Bottom right:** a round chat button that opens the [Cenhub Assistant](../cenhub-assistant.md).
 
 After you sign in you land on the [Dashboard](../dashboard.md).
 
