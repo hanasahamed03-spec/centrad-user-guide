@@ -291,3 +291,8 @@
 [data-md-color-scheme="slate"] .md-typeset .cen-steps > ol > li::before { box-shadow: 0 0 0 .25rem #121D31; }
 [data-md-color-scheme="slate"] .md-typeset .cen-steps > ol > li:not(:last-child)::after { background: #24354F; }
 [data-md-color-scheme="slate"] .md-typeset .cen-steps > ol > li:hover { background: rgba(207, 69, 65, .14); }
+
+/* ---------------- left menu: scroll area fills its panel (removes the blank gap under the last item) ---------------- */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-sidebar__scrollwrap { height: 100% !important; }
+}
