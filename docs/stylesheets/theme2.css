@@ -296,3 +296,53 @@
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary .md-sidebar__scrollwrap { height: 100% !important; }
 }
+
+/* =====================================================================
+   RIGHT PANEL ("On this page"): one clean white column like the reference
+===================================================================== */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    background: #fff !important;
+    border-left: 1px solid var(--cen-line);
+  }
+  [data-md-color-scheme="slate"] .md-sidebar--secondary {
+    background: #0F1828 !important;
+    border-left-color: #24354F;
+  }
+  .md-sidebar--secondary .md-sidebar__scrollwrap { height: 100% !important; }
+  /* heading row: same white, thin divider under it */
+  .md-sidebar--secondary .cen-panel-head {
+    background: transparent;
+    padding: .85rem .9rem .7rem 1.1rem;
+    border-bottom: 1px solid var(--cen-line);
+    margin-bottom: .6rem;
+  }
+  [data-md-color-scheme="slate"] .md-sidebar--secondary .cen-panel-head { border-bottom-color: #24354F; }
+
+  /* list: one guide line along the left, items aligned with the title */
+  .md-sidebar--secondary .md-nav--secondary { padding: 0 .9rem 0 1.1rem; }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__list {
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid var(--cen-line);
+  }
+  [data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav--secondary .md-nav__list { border-left-color: #24354F; }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__list .md-nav__list { border-left: 0; margin-left: .7rem; }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__link {
+    position: relative;
+    margin: 0;
+    padding: .32rem .6rem .32rem .8rem;
+    border-radius: 0;
+  }
+  /* active heading: red segment sitting on the guide line */
+  .md-sidebar--secondary .md-nav--secondary .md-nav__link--active { color: var(--cen-red-dark); font-weight: 600; }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__link--active::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: .15rem;
+    bottom: .15rem;
+    width: 2px;
+    background: var(--cen-red);
+  }
+}
